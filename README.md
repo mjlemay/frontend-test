@@ -10,13 +10,16 @@ npm install
 
 node server.js
 
-# Instructions
-There should now be a web server running at http://localhost:8888
-Follow the instructions displayed on that webpage.
-
-The node server provides everything you need for the back end of the test. You are welcome to look at the server code, but you should not need to modify anything to make your front end work. All of your code should be placed in the public directory in this project. The node server will act as the web server for your front end application.
-
-Please insure that your code runs properly with the node server. Test all the features and make sure that no Javascript errors are generated.
-
-Thank you
-
+# FAQ
+## What URL should be used to access your application?
+ If running, you can view this application at http://localhost:8888
+## What libraries did you use to write your application?
+  react.js, babel.js, gulp.js
+## What influenced the design of your user interface?
+  I wanted something simplistic and familiar to people, so I decided to model it off of the spotify
+## What steps did you take to make your application user friendly?
+ I presented it to users for UAT feedback. Typically I'll make my applications work on mobile first and expand out words to tablet and desktop.
+## What steps did you take to insure your application was secure?
+ I went ahead and added basic javascript web tokens since the initial pass of authentication is minimal.
+## What could be done to the front end or back end to make it more secure?
+ Ideally a more sophisticated system would be such as an OAuth or a third party two factor authentication system.
