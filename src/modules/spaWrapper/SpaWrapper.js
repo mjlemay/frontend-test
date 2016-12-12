@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import styles from './SpaWrapper.styl';
 
 const SpaWrapper = () => (
-    <div className="SpaWrapper">
+    <div className={styles.SpaWrapper}>
       Spa App goes here with child React components
     </div>
 );

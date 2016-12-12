@@ -99,10 +99,24 @@ const frontend = _.merge({}, config, {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(true),
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity})
-  ].concat([]),
+  ].concat([
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new ExtractTextPlugin('css/styles.css', {allChunks: true}),
+    new AssetsPlugin({path: path.resolve(__dirname, 'public', 'assets')}),
+    new ChunkManifestPlugin({filename: 'webpack-manifest.json', manifestVariable: 'webpackManifest'})
+  ]),
   module: {
     loaders: config.module.loaders.map(loader => {
-      //TODO: minifcation code
+      if (loader.loader.indexOf('stylus') !== -1) {
+         _.merge(loader, {
+           loader: ExtractTextPlugin.extract(`css-loader?module&localIdentName=[name]__[local]___[hash:base64:5]!${AUTOPREFIXER_LOADER}!stylus`)
+         });
+      } else if (loader.loader.indexOf('css-loader') !== -1) {
+         _.merge(loader, {
+           loader: ExtractTextPlugin.extract(`css-loader?module&localIdentName=[name]__[local]___[hash:base64:5]!csscomb!${AUTOPREFIXER_LOADER}`)
+         });
+      }
       return loader;
     })
   }

@@ -19,7 +19,6 @@ webpackJsonp([1],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function checkDom(fn) {
-	  console.log('checking dom');
 	  if (document.readyState !== 'loading') {
 	    fn();
 	  } else if (document.addEventListener) {
@@ -3326,7 +3325,7 @@ webpackJsonp([1],[
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -3336,13 +3335,17 @@ webpackJsonp([1],[
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _SpaWrapper = __webpack_require__(384);
+
+	var _SpaWrapper2 = _interopRequireDefault(_SpaWrapper);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var SpaWrapper = function SpaWrapper() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "SpaWrapper" },
-	    "Spa App goes here with child React components"
+	    'div',
+	    { className: _SpaWrapper2.default.SpaWrapper },
+	    'Spa App goes here with child React components'
 	  );
 	};
 
@@ -8095,6 +8098,13 @@ webpackJsonp([1],[
 	);
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(2)))
+
+/***/ },
+/* 384 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"SpaWrapper":"SpaWrapper__SpaWrapper___o7TF4"};
 
 /***/ }
 ]);
