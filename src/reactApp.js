@@ -4,7 +4,6 @@ import {render} from 'react-dom';
 import SpaWrapper from './modules/SpaWrapper/SpaWrapper.js';
 
 function checkDom (fn) {
-  console.log('checking dom');
   if (document.readyState !== 'loading') {
     fn();
   } else if (document.addEventListener) {
