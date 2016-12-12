@@ -7,11 +7,18 @@ global-reset()
 @import url(http://fonts.googleapis.com/css?family=Open\+Sans:300italic,400italic,600italic,700italic,400,700,600,300)
 
 //global color vars
-$animationSpeed = 0.25s
-$animationType = ease-in-out
+$bodyColor = #181818
+$fontTitleColor = #fff
+$fontTextColor = #adaeb3
 
-$bodyColor = #121212
+//global base cutoff for media queries
+$desktopBreakpoint = 1400px
+$tabletBreakpoint = 900px
+$mobileBreakpoint = 600px
 
-html
+html, body
   background-color $bodyColor
-  font-family 'Open Sans'
+  font-family 'Open Sans', sans-serif
+  font-weight 600
+  font-size 1em
+  color $fontTextColor

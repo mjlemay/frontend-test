@@ -1,5 +1,14 @@
 @import "../../styles/global.styl"
 
 .SpaWrapper
-  background-color #000
-  color #fff
+  position relative
+  width 70%
+  margin-left 15%
+
+  +below($tabletBreakpoint)
+    width 80%
+    margin-left 10%
+
+  +below($mobileBreakpoint)
+    width 90%
+    margin-left 5%
