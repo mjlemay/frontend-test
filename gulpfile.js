@@ -1,15 +1,28 @@
-const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
+var $ = require('gulp-load-plugins')();
+var gulp = require('gulp');
+var webpack = require('webpack');
+const webpackCongig = require('./webpack.config.js');
+const bundler = webpack(webpackCongig);
 
-gulp.task('default', () => {
-    return gulp.src('src/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(concat('app.js'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('public'));
-});
+
+/*
+  gulp.task('default', () => {
+}
+*/
+
+function startBundle (err, stats) {
+  if (err) {
+    throw new $.util.PluginError('webpack', err);
+  }
+}
+
+function bundleNoWatchTask (done) {
+  function bundle (err, stats) {
+    startBundle(err, stats);
+    return done();
+  }
+  bundler.run(bundle);
+}
+
+
+gulp.task('webpack', bundleNoWatchTask);

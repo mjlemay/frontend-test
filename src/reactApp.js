@@ -1,9 +1,10 @@
 import "babel-polyfill";
 import React from 'react';
 import {render} from 'react-dom';
-import SpaWrapper from './SpaWrapper/SpaWrapper.js';
+import SpaWrapper from './modules/SpaWrapper/SpaWrapper.js';
 
 function checkDom (fn) {
+  console.log('checking dom');
   if (document.readyState !== 'loading') {
     fn();
   } else if (document.addEventListener) {
@@ -19,7 +20,7 @@ function checkDom (fn) {
 
 function startup () {
     render(
-    <h1>Hello, world!</h1>,
+    <SpaWrapper />,
     document.getElementById('root')
   );
 }
