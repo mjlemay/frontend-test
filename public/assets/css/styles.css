@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);html,
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300);html,
 body,
 div,
 span,
@@ -91,6 +91,8 @@ a img {
 }
 html,
 body {
+  display: block;
+  position: relative;
   background-color: #181818;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -98,9 +100,12 @@ body {
   color: #adaeb3;
 }
 .SpaWrapper__SpaWrapper___o7TF4 {
+  display: block;
   position: relative;
   width: 70%;
   margin-left: 15%;
+  min-height: 100%;
+  height: 100vh;
 }
 @media only screen and (max-width: 900px) {
   .SpaWrapper__SpaWrapper___o7TF4 {
@@ -113,4 +118,293 @@ body {
     width: 90%;
     margin-left: 5%;
   }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+html,
+body {
+  display: block;
+  position: relative;
+  background-color: #181818;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #adaeb3;
+}
+.Login__Login___BSBfT {
+  width: 340px;
+  height: 340px;
+  text-align: center;
+  top: 100px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.Login__Login___BSBfT h1 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin: 0 auto 55px;
+}
+.Login__Login___BSBfT input {
+  display: block;
+  font-weight: 300;
+  text-align: left;
+  background-color: #333;
+  width: 100%;
+  height: 35px;
+  border: none;
+  font-size: 1em;
+  letter-spacing: 0.0125em;
+  color: #adaeb3;
+  text-indent: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.Login__Login___BSBfT input:focus {
+  outline: none;
+  background-color: #404040;
+}
+.Login__Login___BSBfT button {
+  display: inline-block;
+  font-weight: 600;
+  background-color: #1d8bb9;
+  padding: auto 10px;
+  height: 35px;
+  border: none;
+  font-size: 1em;
+  letter-spacing: 0.0125em;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.Login__Login___BSBfT button:hover {
+  background-color: #1e91c1;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+html,
+body {
+  display: block;
+  position: relative;
+  background-color: #181818;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #adaeb3;
+}
+.Logout__Logout___2t_7M {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.Logout__Logout___2t_7M button {
+  display: inline-block;
+  font-weight: 600;
+  background-color: transparent;
+  padding: auto 10px;
+  height: 35px;
+  border: none;
+  font-size: 1em;
+  letter-spacing: 0.0125em;
+  color: #1d8bb9;
+  border: 1px solid #1d8bb9;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.Logout__Logout___2t_7M button:hover {
+  background-color: #1e91c1;
+  border-color: #fff;
+  color: #fff;
 }

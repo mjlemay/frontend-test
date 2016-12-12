@@ -1,0 +1,27 @@
+@import "../../styles/global.styl"
+
+.Logout
+  position absolute
+  top 15px
+  right 15px
+
+  button
+    display inline-block
+    font-weight 600
+    background-color transparent
+    padding auto 10px
+    height 35px
+    border none
+    font-size 1em
+    letter-spacing 0.0125em
+    color $buttonBGColor
+    border 1px solid $buttonBGColor
+    border-radius 10px
+    margin 0 auto  15px
+    cursor pointer
+    transition background-color $animationSpeed $animationType
+
+    &:hover
+      background-color $buttonBGFocusColor
+      border-color $buttonTextColor
+      color $buttonTextColor

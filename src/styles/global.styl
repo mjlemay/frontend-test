@@ -6,10 +6,20 @@ global-reset()
 //font families
 @import url(http://fonts.googleapis.com/css?family=Open\+Sans:300italic,400italic,600italic,700italic,400,700,600,300)
 
+//animation vars
+$animationSpeed = 0.25s
+$animationType = ease-in-out
+
 //global color vars
 $bodyColor = #181818
 $fontTitleColor = #fff
 $fontTextColor = #adaeb3
+$inputFieldBGColor = #333
+$inputFieldBGFocusColor = #404040
+$inputFieldTextColor = #adaeb3
+$buttonBGColor = #1d8bb9
+$buttonBGFocusColor = #1e91c1
+$buttonTextColor = #fff
 
 //global base cutoff for media queries
 $desktopBreakpoint = 1400px
@@ -17,6 +27,8 @@ $tabletBreakpoint = 900px
 $mobileBreakpoint = 600px
 
 html, body
+  display block
+  position relative
   background-color $bodyColor
   font-family 'Open Sans', sans-serif
   font-weight 600

@@ -1,19 +1,3 @@
-
-/*
-const config = {
-  entry: './src/modules/reactApp.js',
-  output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'app.bundle.js'
-  },
-  module: {
-    rules: [
-      {test: /\.(js|jsx)$/, use: 'babel-loader'}
-    ]
-  }
-};
-*/
-
 const _ = require('lodash');
 const AssetsPlugin = require('assets-webpack-plugin');
 const webpack = require('webpack');

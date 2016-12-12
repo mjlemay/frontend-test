@@ -29,6 +29,7 @@ function sendUnauthorized(response) {
 
 app.post('/login', function(request, response) {
     var user = request.body.user;
+    
     if (users[user] === undefined) {
         return sendUnauthorized(response);
     }
